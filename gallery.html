@@ -1,0 +1,110 @@
+<DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Rosa - Galerie</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { color: #3A3335; }
+    .brand-primary { background-color: #E26D5C; }
+    .brand-primary-text { color: #E26D5C; }
+    .brand-primary-hover:hover { background-color: #cb5b4b; }
+  </style>
+</head>
+<body class="bg-stone-50">
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 h-20 flex items-center shadow-sm">
+    <div class="max-w-6xl mx-auto w-full px-6 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold brand-primary-text flex items-center gap-2">
+        <span>Café Rosa</span>
+      </a>
+      <div class="hidden md:flex items-center gap-2 text-sm font-medium">
+        <a href="index.html" class="hover:bg-stone-100 rounded-lg px-4 py-2 transition">Accueil</a>
+        <a href="about.html" class="hover:bg-stone-100 rounded-lg px-4 py-2 transition">À propos</a>
+        <a href="services.html" class="hover:bg-stone-100 rounded-lg px-4 py-2 transition">Menu</a>
+        <a href="gallery.html" class="brand-primary text-white rounded-lg px-4 py-2">Galerie</a>
+        <a href="booking.html" class="hover:bg-stone-100 rounded-lg px-4 py-2 transition">Réserver</a>
+        <a href="contacts.html" class="hover:bg-stone-100 rounded-lg px-4 py-2 transition">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumbs -->
+  <div class="bg-stone-100 py-3 border-b border-stone-200">
+    <div class="max-w-6xl mx-auto px-6 text-sm text-stone-600">
+      <a href="index.html" class="hover:underline">Accueil</a> > Galerie
+    </div>
+  </div>
+
+  <!-- Gallery Section -->
+  <section class="py-20 px-6 max-w-6xl mx-auto">
+    <div class="text-center mb-16">
+      <h1 class="text-4xl font-bold mb-4">Galerie Photos</h1>
+      <p class="text-stone-600 max-w-xl mx-auto">Un aperçu de notre espace chaleureux, militant et inclusif au cœur de Lyon.</p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div class="aspect-square overflow-hidden rounded-xl shadow">
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80" alt="Café Rosa 1" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+      </div>
+      <div class="aspect-square overflow-hidden rounded-xl shadow">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80" alt="Café Rosa 2" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+      </div>
+      <div class="aspect-square overflow-hidden rounded-xl shadow">
+        <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=600&q=80" alt="Café Rosa 3" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+      </div>
+      <div class="aspect-square overflow-hidden rounded-xl shadow">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Café Rosa 4" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+      </div>
+      <div class="aspect-square overflow-hidden rounded-xl shadow">
+        <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=600&q=80" alt="Café Rosa 5" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+      </div>
+      <div class="aspect-square overflow-hidden rounded-xl shadow">
+        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=600&q=80" alt="Café Rosa 6" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-stone-900 text-stone-300 py-12">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-white font-bold text-lg mb-4">Café Rosa</h3>
+        <p class="text-sm">78 bis Rue Béchevelin, 69007 Lyon, France</p>
+        <p class="text-sm mt-2">contact@caferosa.fr</p>
+      </div>
+      <div>
+        <h3 class="text-white font-bold text-lg mb-4">Liens rapides</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="hover:text-white">Accueil</a></li>
+          <li><a href="about.html" class="hover:text-white">À propos</a></li>
+          <li><a href="services.html" class="hover:text-white">Menu</a></li>
+          <li><a href="gallery.html" class="hover:text-white">Galerie</a></li>
+          <li><a href="booking.html" class="hover:text-white">Réserver</a></li>
+          <li><a href="contacts.html" class="hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white font-bold text-lg mb-4">Horaires</h3>
+        <p class="text-sm">Mardi au samedi : 13:00 - 20:00</p>
+        <p class="text-sm mt-4 text-stone-400">&copy; 2026 Café Rosa. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    // Плавная прокрутка
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
