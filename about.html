@@ -1,0 +1,111 @@
+<DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Rosa - À propos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { color: #3A3335; }
+    .brand-primary { background-color: #E26D5C; }
+    .brand-primary-text { color: #E26D5C; }
+    .brand-primary-hover:hover { background-color: #cb5b4b; }
+  </style>
+</head>
+<body class="bg-stone-50">
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 h-20 flex items-center shadow-sm">
+    <div class="max-w-6xl mx-auto w-full px-6 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold brand-primary-text flex items-center gap-2">
+        <span>Café Rosa</span>
+      </a>
+      <div class="hidden md:flex items-center gap-2 text-sm font-medium">
+        <a href="index.html" class="hover:bg-stone-100 rounded-lg px-4 py-2 transition">Accueil</a>
+        <a href="about.html" class="brand-primary text-white rounded-lg px-4 py-2">À propos</a>
+        <a href="services.html" class="hover:bg-stone-100 rounded-lg px-4 py-2 transition">Menu</a>
+        <a href="gallery.html" class="hover:bg-stone-100 rounded-lg px-4 py-2 transition">Galerie</a>
+        <a href="booking.html" class="hover:bg-stone-100 rounded-lg px-4 py-2 transition">Réserver</a>
+        <a href="contacts.html" class="hover:bg-stone-100 rounded-lg px-4 py-2 transition">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumbs -->
+  <div class="bg-stone-100 py-3 border-b border-stone-200">
+    <div class="max-w-6xl mx-auto px-6 text-sm text-stone-600">
+      <a href="index.html" class="hover:underline">Accueil</a> > À propos
+    </div>
+  </div>
+
+  <!-- About Content -->
+  <section class="py-20 px-6 max-w-4xl mx-auto">
+    <h1 class="text-4xl font-bold mb-8">À propos de Café Rosa</h1>
+    
+    <div class="space-y-6 text-lg text-stone-700 leading-relaxed">
+      <p>Café Rosa est un lieu de vie associatif, culturel et militant situé au cœur du 7e arrondissement de Lyon, à la croisée des luttes queer, féministes, antiracistes et alliées. Espace chaleureux et inclusif, il propose en journée un cadre convivial pour travailler, discuter ou bouquiner, et accueille en soirée une programmation socio-culturelle riche : ateliers, conférences, expositions, projections et soirées thématiques.</p>
+      <p>Porté par des valeurs de solidarité et de partage, le Café Rosa se veut un havre de paix inclusif et sécurisant pour les communautés LGBTQIA+ et l'ensemble de ses habitant·es. On y vient pour échanger, soutenir des projets militants locaux ou simplement partager un moment de convivialité autour de boissons et de douceurs.</p>
+      <p>En tant qu'espace associatif autogéré et engagé, le café vit grâce à l'implication de sa communauté et propose une programmation quasi-quotidienne gratuite, à prix libre ou avec des tarifications solidaires. C'est un repère incontournable de la vie militante et culturelle lyonnaise.</p>
+    </div>
+
+    <!-- Unique Facts -->
+    <div class="mt-16">
+      <h2 class="text-2xl font-bold mb-6">Nos engagements</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow border border-stone-100">
+          <h3 class="font-bold mb-2 brand-primary-text">Pionnier à Lyon</h3>
+          <p class="text-stone-600 text-sm">Premier lieu queer, féministe et antiraciste de Lyon.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow border border-stone-100">
+          <h3 class="font-bold mb-2 brand-primary-text">Culture & Partage</h3>
+          <p class="text-stone-600 text-sm">Propose une programmation socio-culturelle quasi quotidienne : ateliers, conférences, expositions.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow border border-stone-100">
+          <h3 class="font-bold mb-2 brand-primary-text">Inclusivité</h3>
+          <p class="text-stone-600 text-sm">Espace de sociabilisation et de soutien aux communautés LGBTQIA+.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-stone-900 text-stone-300 py-12">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-white font-bold text-lg mb-4">Café Rosa</h3>
+        <p class="text-sm">78 bis Rue Béchevelin, 69007 Lyon, France</p>
+        <p class="text-sm mt-2">contact@caferosa.fr</p>
+      </div>
+      <div>
+        <h3 class="text-white font-bold text-lg mb-4">Liens rapides</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="hover:text-white">Accueil</a></li>
+          <li><a href="about.html" class="hover:text-white">À propos</a></li>
+          <li><a href="services.html" class="hover:text-white">Menu</a></li>
+          <li><a href="gallery.html" class="hover:text-white">Galerie</a></li>
+          <li><a href="booking.html" class="hover:text-white">Réserver</a></li>
+          <li><a href="contacts.html" class="hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white font-bold text-lg mb-4">Horaires</h3>
+        <p class="text-sm">Mardi au samedi : 13:00 - 20:00</p>
+        <p class="text-sm mt-4 text-stone-400">&copy; 2026 Café Rosa. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    // Плавная прокрутка
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
