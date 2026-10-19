@@ -1,0 +1,119 @@
+<DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Rosa - Contact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { color: #3A3335; }
+    .brand-primary { background-color: #E26D5C; }
+    .brand-primary-text { color: #E26D5C; }
+    .brand-primary-hover:hover { background-color: #cb5b4b; }
+  </style>
+</head>
+<body class="bg-stone-50">
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 h-20 flex items-center shadow-sm">
+    <div class="max-w-6xl mx-auto w-full px-6 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold brand-primary-text flex items-center gap-2">
+        <span>Café Rosa</span>
+      </a>
+      <div class="hidden md:flex items-center gap-2 text-sm font-medium">
+        <a href="index.html" class="hover:bg-stone-100 rounded-lg px-4 py-2 transition">Accueil</a>
+        <a href="about.html" class="hover:bg-stone-100 rounded-lg px-4 py-2 transition">À propos</a>
+        <a href="services.html" class="hover:bg-stone-100 rounded-lg px-4 py-2 transition">Menu</a>
+        <a href="gallery.html" class="hover:bg-stone-100 rounded-lg px-4 py-2 transition">Galerie</a>
+        <a href="booking.html" class="hover:bg-stone-100 rounded-lg px-4 py-2 transition">Réserver</a>
+        <a href="contacts.html" class="brand-primary text-white rounded-lg px-4 py-2">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumbs -->
+  <div class="bg-stone-100 py-3 border-b border-stone-200">
+    <div class="max-w-6xl mx-auto px-6 text-sm text-stone-600">
+      <a href="index.html" class="hover:underline">Accueil</a> > Contact
+    </div>
+  </div>
+
+  <!-- Contacts Section -->
+  <section class="py-20 px-6 max-w-6xl mx-auto">
+    <div class="text-center mb-16">
+      <h1 class="text-4xl font-bold mb-4">Contactez-nous</h1>
+      <p class="text-stone-600 max-w-xl mx-auto">Venez nous rendre visite ou contactez-nous par e-mail ou téléphone.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div class="bg-white p-8 rounded-2xl shadow-lg border border-stone-100 space-y-6">
+        <h2 class="text-2xl font-bold mb-4">Informations pratiques</h2>
+        <div>
+          <h3 class="font-semibold text-stone-900">Adresse</h3>
+          <p class="text-stone-600">78 bis Rue Béchevelin, 69007 Lyon, France</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-stone-900">Téléphone</h3>
+          <p class="text-stone-600">+33 9 87 14 59 58</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-stone-900">E-mail</h3>
+          <p class="text-stone-600">contact@caferosa.fr</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-stone-900">Horaires d'ouverture</h3>
+          <p class="text-stone-600">Mardi au samedi : 13:00 - 20:00</p>
+        </div>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl shadow-lg border border-stone-100 flex flex-col justify-center">
+        <h2 class="text-2xl font-bold mb-4">Réseaux sociaux</h2>
+        <p class="text-stone-600 mb-6">Suivez nos actualités et notre programmation culturelle sur notre page Facebook officielle :</p>
+        <a href="https://www.facebook.com/cafe.rosa.lyon" target="_blank" class="brand-primary brand-primary-hover text-white text-center py-4 rounded-xl font-bold shadow transition block">
+          Visiter notre page Facebook
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-stone-900 text-stone-300 py-12">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-white font-bold text-lg mb-4">Café Rosa</h3>
+        <p class="text-sm">78 bis Rue Béchevelin, 69007 Lyon, France</p>
+        <p class="text-sm mt-2">contact@caferosa.fr</p>
+      </div>
+      <div>
+        <h3 class="text-white font-bold text-lg mb-4">Liens rapides</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="hover:text-white">Accueil</a></li>
+          <li><a href="about.html" class="hover:text-white">À propos</a></li>
+          <li><a href="services.html" class="hover:text-white">Menu</a></li>
+          <li><a href="gallery.html" class="hover:text-white">Galerie</a></li>
+          <li><a href="booking.html" class="hover:text-white">Réserver</a></li>
+          <li><a href="contacts.html" class="hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white font-bold text-lg mb-4">Horaires</h3>
+        <p class="text-sm">Mardi au samedi : 13:00 - 20:00</p>
+        <p class="text-sm mt-4 text-stone-400">&copy; 2026 Café Rosa. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    // Плавная прокрутка
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
